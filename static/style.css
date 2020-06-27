@@ -1,0 +1,634 @@
+*{
+	padding:0;
+	margin:0;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+body {
+	position: relative;
+}
+
+.header 
+{  height: 100%;
+	 background-attachment: fixed;
+	background-image:linear-gradient( rgba(0,0,0,0.3),rgba(0,0,0,0.3)) ,url("header2.jpg");
+	background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top:30px;
+  text-align:center;
+  color:#fff;
+  font-family:helvetica;
+	
+}
+.amt {
+	font-size: 23px !important;
+	color: #36A0FF !important;
+}
+	.navbar-brand {
+	padding:unset !important;
+}
+
+.regWell {
+	box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.6) !important;
+	background-color: thistle !important;
+}
+
+#logo {
+	width: 100px;
+	height: 50px;
+	float: left !important;
+	background: transparent;
+}
+
+
+
+.login-btn{
+	
+	width:170px;
+	padding:8px 0;
+	outline:none;
+	border: 2px solid #fff ;
+	border-radius:50px;
+	background: transparent;
+	color:#fff;
+	float:right;
+}
+
+.header h1 {
+	padding-top: 300px;
+	padding-bottom: 0px;
+	font-size: 50px;
+	color: palegoldenrod !important;
+}
+
+.header p {
+	margin: 18px 0;
+	font-size: 20px;
+	color: palegoldenrod !important;
+}
+
+
+
+.input-group {
+	width: 90%;
+	max-width: 500px;
+	border-radius: 30px;
+	background: #fff;
+	margin: 150px auto;
+	padding: 2px;
+}
+
+
+.form-control{
+	
+	border: 0 !important;
+	border-radius:30px !important;
+	margin: 2px ;
+	box-shadow: none !important;
+	}
+	
+	
+.input-group-text{
+	width:150px;
+	
+	background-image:radial-gradient(#ff5200,#1f3d90);
+	border: 0 !important;
+		color:white !important;
+padding:0 25px !important;
+border-radius:30px !important;
+box-shadow: none !important;
+	
+}
+
+
+#slider{
+
+	  
+	margin: 50px auto 70px;
+	width:700px;
+	
+	height:700px;    /* to make responsive image , use auto heigt and width */
+
+	width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+     box-shadow: 5px 10px 8px 10px #888888;
+	
+	 border: 5px solid aliceblue;
+  padding: 15px;
+  /* border-image: url(static/border.png) 20 round; */
+	
+	
+}
+.myBtn {
+	text-align: center;
+	/* margin: 0 auto; */
+	padding-bottom: 50px;
+}
+
+
+.prev, .next {
+	cursor: pointer;
+	border: 3px solid #fff;
+	width: auto;
+	padding: 25px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+
+/* Position the "next button" to the right */
+
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+ 
+}
+
+
+.containerDiv {
+	background-attachment: fixed;
+	background-image: linear-gradient( rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url("texture7.jpg");
+}
+
+@media (min-width: 768px) {
+	.navbar-collapse.in {
+		overflow-y: visible;
+	}
+}
+.containerDiv h1{
+	
+	font-family:Bookman;
+	margin-top :auto;
+	padding-top:100px;
+  text-align:center;
+  font-size:40px;
+  
+  
+}
+
+
+.feature-img img{
+	
+	width:100%;
+	
+}
+
+.price{
+	width:70px;
+	height:70px;
+	background: #ff5722;
+	color:#fff;
+	font-weight:600;
+	border-radius:50%;
+	padding:12px;
+	box-shadow:0 0 10px 1px rgba(37,73,214,0.18);
+	text-align:center;
+	margin-top:10px;
+}
+
+.feature-details{
+	
+	text-align: justify;
+	padding:20px;
+	
+		background-color:antiquewhite;
+}
+
+
+
+.features h1{
+
+	
+	font-family:Bookman;
+	margin-top :auto;
+	padding-top:100px;
+  text-align:center;
+  font-size:40px;
+  
+  
+}
+.bigicon {
+	font-size: 35px !important;
+	color: #36A0FF;
+}
+.features {
+	margin: 100px auto 300px !important;
+}
+
+.bookNow {
+
+   padding-top:200px;
+}
+
+.chkBtn {
+	padding-top:50px !important;
+}
+
+.containerFeature {
+	margin: 100px 60px 100px 60px;
+}
+
+.feature-img:hover img{
+	
+	  opacity: 0.6;
+}
+
+.imgCombo {
+	width: 100%;
+	height: 250px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+}
+
+.imgComboGrid {
+	width: 100%;
+	height: 350px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+}
+
+
+.nav-link{
+	
+	color: antiquewhite !important ;
+	font-weight:bold;
+	font-size:20px;
+	
+}
+
+.nav-link:hover {
+color: #fff  !important;
+background-color:darkred !important;
+}
+
+
+.bg-white , .container-fluid , .collapse{
+	
+	margin: 0  !important;
+	padding: 0  !important;
+}
+
+.foot {
+	list-style-type:none;
+	margin:30px auto;
+}
+
+
+.footerEach {
+
+	margin-bottom:0px !important;
+	
+	text-align: justify;
+}
+
+.indexFooter, .contactusFooter, .pckFooter , .bookFooter {
+	margin-top: 300px;
+	background-color: aliceblue;
+	margin-bottom: 0px !important;
+	/* padding-top: 80px; */
+	text-align: justify;
+}
+
+.navbar-nav {
+	float:right !important;
+}
+
+.form-group {
+	margin-top: 20px !important;
+	margin-bottom: 20px !important;
+	padding-top: 20px !important;
+	padding-bottom: 20px !important;
+}
+
+.bookFooter {
+
+	margin-top: 300px;
+	
+	margin-bottom: 0px !important;
+	/* padding-top: 80px; */
+	text-align: justify;
+	margin-top: 300px !important;
+
+
+	width: 100%;
+	background-color: #000;
+	bottom: 0;
+	color: orange;
+}
+
+	.bookFooter .active {
+		color: antiquewhite !important;
+	}
+
+.active {
+	margin-left: 20px !important;
+	font-weight: bold;
+	color: dodgerblue !important;
+}
+
+.footerEach h3 {
+	margin : 20px auto;
+
+}
+.copy  {
+	text-align:center;
+	margin: 20px auto 0;
+}
+
+.bg-white {
+	background-image: url("head2.jpg");
+}
+
+
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+	max-width: 300px;
+	margin: auto;
+	text-align: center;
+	font-family: arial;
+}
+
+.title {
+	color: grey;
+	font-size: 18px;
+}
+
+button {
+	border: none;
+	outline: 0;
+	display: inline-block;
+	padding: 8px;
+	color: white;
+	background-color: #000;
+	text-align: center;
+	cursor: pointer;
+	width: 100%;
+	font-size: 18px;
+}
+
+a {
+	text-decoration: none;
+	font-size: 15px;
+	color: black;
+}
+
+.centAgina a {
+
+	font-size: 22px;
+	color: orange;
+}
+
+.centAgina a:hover {
+	font-size: 25px;
+	color: #fff;
+}
+
+button:hover, a:hover {
+		opacity: 0.7;
+	}
+
+
+.businessCard {
+	margin-top: 300px;
+	padding: 100px;
+	background-image: linear-gradient( rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url("texture5.jpg");
+}
+.aboutUsMain {
+	background-image: linear-gradient( rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("texture1.jpg");
+	color: white;
+	height: 100%;
+	text-align: center;
+	overflow:auto;
+	
+}
+
+.contactUsMain {
+	
+	background-image: linear-gradient( rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("texture13.jpg");
+	color: white;
+	width:100%;
+	text-align: center;
+
+}
+
+.bookNow{
+	width:100%;
+	text-align: center;
+	
+}
+
+.ctc:hover  {
+	opacity: 0.8;
+}
+.centAgina {
+	text-align:center;
+	justify-content:center;
+	padding-top:270px;
+	font-weight:700;
+	color:coral !important;
+}
+.ctc {
+	box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.3);
+	background-image: linear-gradient( rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("texture1.jpg");
+	height: 500px !important;
+	width: 500px !important;
+	border-radius: 50% !important;
+	text-align: center !important;
+	position: relative !important;
+}
+
+	.ctc p {
+		position: absolute;
+		top: 50%;
+		vertical-align: middle;
+		padding-left: 150px;
+		padding-right: 150px;
+		color: #fff;
+		justify-content: center !important;
+		text-align: center !important;
+	}
+
+	.ctc h2 {
+		position: absolute;
+		top: 30%;
+		color: antiquewhite;
+		padding-left: 150px;
+		text-align: center !important;
+		font-weight: bold;
+	
+		justify-content: center !important;
+	}
+
+
+
+
+
+
+
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+	padding-bottom:200px  !important;
+}
+
+	.flex-container > div {
+		
+		
+		margin: 50px;
+		
+	}
+
+
+
+
+
+.contactUsMain h1 {
+	text-decoration: underline;
+	padding: 100px 0;
+	color: darkred;
+	text-align: center;
+	margin-bottom: auto;
+	font-size: 50px;
+}
+
+.aboutUsMain h1 {
+	text-decoration: underline;
+	font-family: MONOSPACE;
+	font-size: 50px;
+	margin-top: 30px !important;
+	color: goldenrod;
+}
+.businessCard h1 {
+	margin-bottom:50px;
+	font-family: Candara, cursive;
+	font-size: 50px;
+	color: #fff;
+	text-align: center;
+}
+.headerEach {
+	width:100% !important;
+	position:fixed !important;
+	z-index:2;
+}
+
+
+
+.col {
+	font-size: 25px;
+	text-align: center;
+	padding-top: 150px;
+}
+
+.packageTable {
+	
+	margin: auto;
+	width: 100%;
+	
+}
+
+.table tr:nth-child(even) {
+	background-color: #f2f2f2 !important;
+}
+.table tr:first-child {
+	background-color: darkmagenta !important;
+}
+
+.packageTable h1 {
+	color:black;
+	text-align: center;
+	margin-bottom: auto;
+
+}
+.pad {
+	padding-top:150px;
+}
+
+
+.table {
+	text-align: center !important;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6) !important;
+}
+
+.abt {
+	max-width: 300px !important;
+	text-align: center !important;
+}
+.card {
+	max-width: unset;
+	width: auto;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6) !important;
+	/* max-width: 300px; */
+	margin: auto !important;
+	text-align: left ;
+}
+
+.card-body {
+	overflow: auto;
+	height: 520;
+	font-weight: 15 !important;
+	font-size: 20px !important;
+	line-height: 2 !important;
+}
+
+.card-body1 {
+	margin-bottom: 200px;
+	border: 2px solid #968d8d;
+	font-family: Arial;
+	text-align: left;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6) !important;
+}
+
+.pl-4, .px-4 {
+	padding-left: 2.5rem !important;
+}
+
+.pb-5, .py-5 {
+	padding-bottom: 0px !important;
+	padding-top: 0px !important;
+}
+
+.include {
+	margin: 200px auto;
+}
+.inc {
+	background-color: darkcyan !important;
+}
+
+.col-sm-3 h3, .cent {
+	text-align: center;
+}
+
+.tnc {
+	background-color: black !important;
+}
+.exc {
+	background-color: crimson !important;
+}
+
+.packageTable row {
+	padding-top:0 !important;
+}
+.bookBack {
+	box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.6) !important;
+	background-color: lavender !important;
+}
+.pl-4 li {
+	font-family: Arial;
+	text-indent: 0px;
+}
+
+.indent {
+	margin-left: 2.5rem !important;
+	font-family: Arial;
+	font-weight: 15 !important;
+	font-size: 20px !important;
+   line-height:2 !important;
+}
