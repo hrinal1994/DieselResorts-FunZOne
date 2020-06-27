@@ -1,0 +1,258 @@
+
+<!DOCTYPE HTML>
+<htmL>
+<head>
+    <title>Diesel Resorts</title>
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="static/myScript.js"></script>
+    <script src="static/checkAvailablity.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+    <script src='https://unpkg.com/sweetalert/dist/sweetalert.min.js'></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" href="static/jq.css">
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js" integrity="sha256-spTpc4lvj4dOkKjrGokIrHkJgNA0xMS98Pw9N7ir9oI=" crossorigin="anonymous"></script>
+   
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <style>
+    
+    </style>
+    <script>
+        
+
+        $(function () {
+            $(".datePick").datepicker({ minDate: 0, maxDate: "+2M +0D" });
+            // $("#chkOutDate").datepicker({ minDate: 0, maxDate: "+2M +0D" });
+        });
+
+        $(document).ready(function () {
+            $(".datePick").focus(function () {
+                $('.ui-datepicker-next').append(" <span class='caldrBtn'>Next</span>");
+                $('.ui-datepicker-prev').append(" <span class='caldrBtn'>Prev</span>");
+                $('.caldrBtn').css("font-size", "11px");
+                $('.ui-corner-all').css("cursor", "pointer");
+            });
+        });
+
+        $(document).ready(function () {
+            $("#noOfRooms").blur(function () {
+                var numOfRooms = $(this).val();
+
+                switch (numOfRooms) {
+
+                    case '1': $("#amount").val('1299');
+                       
+                        break;
+                    case '2': $("#amount").val('2499');
+                      
+                        break;
+                    case '3': $("#amount").val('3299');
+                      
+                        break;
+                    case '4': $("#amount").val('4199');
+
+                        break;
+                    case '5': $("#amount").val('4999');
+                       
+                        break;
+                    case '6': $("#amount").val('5499');
+                      
+                        break;
+                   
+                }
+
+
+
+               
+            });
+        });
+
+
+       
+    </script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>  
+
+</head>
+
+<body>
+
+
+
+    <section class="headerEach">
+        <header class="bg-white overflow-hidden">
+            <nav class="container-fluid border-top border-primary border-3 transition-all navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand  transition-all" href="index.html" title="Diesel Resorts and Fun Zone"><span class="sr-only">Diesel Resorts and Fun Zone</span><img id="logo" src="static/newLogo.jpg" alt="Diesel Resort logo"></a>
+
+                <button class="navbar-toggler bg-gradient-primary" type="button" data-toggle="collapse" data-target="#rvr-nav" aria-controls="#rvr-nav" aria-expanded="false" aria-label="Toggle navigation"><span class="font-lobster text-uppercase text-secondary">Menu</span></button>
+                <div class="collapse navbar-collapse py-3 py-lg-0" id="rvr-nav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link transition-all " href="index.html" title="Visit Diesel Resort Home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link transition-all" href="about-us.html" title="About Diesel Resort">About Us</a></li>
+
+                        <li class="nav-item"><a class="nav-link transition-all" href="packages.html" title="Diesel Resort Packages">Packages</a></li>
+                        <li class="nav-item"><a class="nav-link transition-all" href="contact-us.html" title="Contact Diesel Resort">Contact Us</a></li>
+                        <li class="nav-item"><a class="nav-link transition-all" href="book.html" title="Book Diesel Resort">Book Now</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+    </section>
+
+
+
+    <section class="bookNow">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="well well-sm bookBack">
+                        <form class=""  ng-controller="validateCtrl"  ng-app="myApp" name="bookForm" id="bookForm" method="post"  action="/submit" novalidate>
+                            <fieldset>
+                                <legend class="text-center"><h2>Check Availablity</h2></legend>
+
+                                <div class="form-group">
+                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="far fa-calendar-check bigicon"></i></span>
+
+                                    <div class="col-md-8">
+                                        <input type="text" ng-model="chkInDate" class="form-control datePick" name="chkInDate" id="chkInDate" placeholder="Pick Check-In Date" required  />
+                                        <span style="color:red" ng-show="bookForm.chkInDate.$dirty && bookForm.chkInDate.$invalid">
+                                          
+                                        <span ng-show="bookForm.chkInDate.$error.required">chkInDate is required.</span> 
+                                       </span>
+                                    </div>
+
+
+
+                                </div>
+
+
+                                <div class="form-group">
+                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="far fa-calendar-times bigicon"></i></span>
+                                    <div class="col-md-8">
+                
+                                       <input type="text" ng-model="chkOutDate" ng-change='checkErr(chkInDate,chkOutDate)' class="form-control datePick"  name="chkOutDate" id="chkOutDate" placeholder="Pick Check-Out Date" required  />
+                                        <span style="color:red" ng-show="bookForm.chkOutDate.$touched && bookForm.chkOutDate.$invalid">
+                                        <span ng-show="bookForm.chkOutDate.$error.required">chkOutDate is required.</span>
+                                       
+                                        </span>
+                                        <span style="color:red">{{errMessage}}</span>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fas fa-hotel bigicon"></i></span>
+                                    <div class="col-md-8">
+
+                                        <input type="number" ng-model="noOfRooms" class="form-control" ng-min="1" ng-max="6" id="noOfRooms" name="noOfRooms" placeholder="Number of Rooms" required  />
+                                        <span style="color:red" ng-show="bookForm.noOfRooms.$dirty && bookForm.noOfRooms.$invalid">
+                                            <span ng-show="bookForm.noOfRooms.$error.required">Please specify the Number of Rooms .</span>
+                                            <span ng-show="bookForm.noOfRooms.$error.min">Number of Rooms should be greater than 0</span>
+                                            <span ng-show="bookForm.noOfRooms.$error.max">Maximum 6 rooms can be selected</span>
+                                            </span>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fas fa-user-friends bigicon"></i></span>
+                                    <div class="col-md-8">
+                                        <input type="number" ng-model="noOfPerson" ng-min="1"  class="form-control" id="noOfPerson" name="noOfPerson" placeholder="Number of Person   (Max 4 Person/room)"  required />
+                                        <span style="color:red" ng-show="bookForm.noOfPerson.$dirty && bookForm.noOfPerson.$invalid">
+                                            <span ng-show="bookForm.noOfPerson.$error.required">Please specify the Number of Persons .</span>
+                                            <span ng-show="bookForm.noOfPerson.$error.min">Number of Rooms should be greater than 0</span>
+                                            </span>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                   
+                                    <span class="col-md-1 col-md-offset-2 text-center"><i class=" fas fa-rupee-sign bigicon"></i></span>
+                                    <div class="col-md-8">
+                                        <input type="text" readonly class="form-control" id="amount" name="amount" value="" placeholder="Amount to be paid"  />
+                                    </div>
+                                </div>
+
+
+
+                                <div class="form-group">
+                                    <div class="col-md-12 chkBtn text-center">
+                                        <input type="hidden" name="bookingId" id="bookingId" value="">
+                                       
+                                        <input  ng-disabled="(bookForm.chkInDate.$dirty && bookForm.chkInDate.$invalid)||(bookForm.chkInDate.$untouched && bookForm.chkInDate.$invalid ) || (bookForm.chkInDate.$dirty && bookForm.chkInDate.$invalid ) || (bookForm.chkOutDate.$untouched && bookForm.chkOutDate.$invalid )|| 
+                                       ( bookForm.chkOutDate.$dirty && bookForm.chkOutDate.$invalid) ||  (bookForm.noOfRooms.$dirty && bookForm.noOfRooms.$invalid) || (bookForm.noOfRooms.$untouched && bookForm.noOfRooms.$invalid)||  (bookForm.noOfPerson.$dirty && bookForm.noOfPerson.$invalid)|| ( bookForm.noOfPerson.$untouched && bookForm.noOfPerson.$invalid)"  type="button" class="btn btn-warning btn-primary btn-lg" id="btn1"  value="Check Availablity"  onclick="checkAvailablity();">
+                                        <input disabled id="bookBtn"    type="submit"  value="Book Now" class="btn btn-primary btn-info btn-lg">
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            var app= angular.module('myApp', []);
+             app.controller('validateCtrl', function($scope) {
+                     
+         
+                $scope.checkErr = function(chkInDate,chkOutDate) {
+    $scope.errMessage = '';
+   
+
+    if(new Date(chkInDate) > new Date(chkOutDate)){
+      $scope.errMessage = 'Check out Date should be greater than Check in date';
+      return false;
+    }
+    
+};
+                     
+
+});
+                             
+            </script>
+
+
+    </section>
+
+    
+
+
+    <section class="bookFooter">
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-3">
+                <h3>Reservations</h3>
+                <ul>
+
+
+                    <li class="nav-item foot">		<i class='fas fa-phone' style='font-size:35px;color:red'></i><a class=" transition-all active" href="tel:+919630209206" title="Call for Reservation"><small>+91</small> 9630209206</a></li>
+                    <li class="nav-item foot"><i class='far fa-envelope' style='font-size:35px;color:red'></i><a class=" transition-all active" href="mailto:hrinal.oist@gmail.com" title="Email for Reservation">hrinal.oist@gmail.com</a></li>
+                    <li class="nav-item foot"><i class='fas fa-map-marker-alt' style='font-size:35px;color:red'></i><a class=" transition-all active">New Colony babu Line Parasia , near Jain temple , Dist. Chhindwara</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-3 cent">
+
+                <h3>Direction for the Destination</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.8258308063646!2d78.36604581487744!3d17.468048388030397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb92334955802f%3A0xc41eee207f0ff936!2sKamal&#39;s%20Prestige!5e0!3m2!1sen!2sde!4v1590059166961!5m2!1sen!2sde" width="400" height="200" frameborder="0" style="border:5px;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+            </div>
+            <div class="col-sm-3"></div>
+            <div class="copy"> <small>&copy; 2020 Diesel Resorts and Fun Zone. All Rights Reserved | Design & Developed by Hrinal Bunkar </small></div>
+        </div>
+
+    </section>
+</body>
+</html>
