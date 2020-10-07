@@ -14,7 +14,7 @@ body {
 .header 
 {  height: 100%;
 	 background-attachment: fixed;
-	background-image:linear-gradient( rgba(0,0,0,0.3),rgba(0,0,0,0.3)) ,url("header2.jpg");
+	background-image:linear-gradient( rgba(0,0,0,0.3),rgba(0,0,0,0.3)) ,url("/static/header2.jpg");
 	background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -82,8 +82,13 @@ body {
 	padding: 2px;
 }
 
+#front{ padding: 5px 200px ;}
+
 
 .form-control{
+
+	
+		
 	
 	border: 0 !important;
 	border-radius:30px !important;
@@ -95,10 +100,10 @@ body {
 .input-group-text{
 	width:150px;
 	
-	background-image:radial-gradient(#ff5200,#1f3d90);
+	background-image:radial-gradient(#ff5200,#1f3d90) !important;
 	border: 0 !important;
 		color:white !important;
-padding:0 25px !important;
+
 border-radius:30px !important;
 box-shadow: none !important;
 	
@@ -120,7 +125,7 @@ box-shadow: none !important;
 	
 	 border: 5px solid aliceblue;
   padding: 15px;
-  /* border-image: url(static/border.png) 20 round; */
+  /* border-image: url(/static/border.png) 20 round; */
 	
 	
 }
@@ -157,14 +162,81 @@ box-shadow: none !important;
 
 .containerDiv {
 	background-attachment: fixed;
-	background-image: linear-gradient( rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url("texture7.jpg");
+	background-image: linear-gradient( rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url("/static/texture7.jpg");
 }
 
 @media (min-width: 768px) {
 	.navbar-collapse.in {
 		overflow-y: visible;
 	}
+
+	.nav-item{
+		margin: 2px 7px !important;
+		
+	}
+	
+	.navbar-nav{
+		margin: 10px 2px !important;
+	}
+
+
+	.nav-link {
+	
+		color: antiquewhite !important ;
+		
+	}
+
+	
+	.navbar-toggler{
+
+		display: none !important;
+	}
+	
 }
+
+
+@media (max-width: 768px) {
+	
+	.navbar-nav{
+		margin: 13.5px 55px !important;
+	}
+
+	#front{ padding: 5px 120px !important;}
+
+	.navbar-toggler{
+
+		display: block !important;
+	}
+
+	.navbar-collapse {
+
+		background-image: unset !important;
+	
+		background-color: white    !important;
+
+
+
+		text-align: center !important;
+
+	}
+
+
+
+	.nav-link {
+		font-size: 15px !important;
+		color: #000 !important;
+		font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	}
+	
+    .text-uppercase{
+		color: honeydew !important;
+		font-size: 15px !important;
+	}
+
+}
+
+
+
 .containerDiv h1{
 	
 	font-family:Bookman;
@@ -256,9 +328,11 @@ box-shadow: none !important;
 }
 
 
+
+
 .nav-link{
 	
-	color: antiquewhite !important ;
+	
 	font-weight:bold;
 	font-size:20px;
 	
@@ -278,7 +352,8 @@ background-color:darkred !important;
 
 .foot {
 	list-style-type:none;
-	margin:30px auto;
+	margin:30px auto;    
+	margin-top: 20px !important;
 }
 
 
@@ -344,7 +419,7 @@ background-color:darkred !important;
 }
 
 .bg-white {
-	background-image: url("head2.jpg");
+	background-image: url("/static/head2.jpg");
 }
 
 
@@ -357,7 +432,7 @@ background-color:darkred !important;
 }
 
 .title {
-	color: grey;
+	color: white;
 	font-size: 18px;
 }
 
@@ -399,10 +474,10 @@ button:hover, a:hover {
 .businessCard {
 	margin-top: 300px;
 	padding: 100px;
-	background-image: linear-gradient( rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url("texture5.jpg");
+	background-image: linear-gradient( rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url("/static/texture5.jpg");
 }
 .aboutUsMain {
-	background-image: linear-gradient( rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("texture1.jpg");
+	background-image: linear-gradient( rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("/static/texture1.jpg");
 	color: white;
 	height: 100%;
 	text-align: center;
@@ -411,8 +486,9 @@ button:hover, a:hover {
 }
 
 .contactUsMain {
-	
-	background-image: linear-gradient( rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("texture13.jpg");
+	margin-top: 0px !important;
+	padding-top: 0px !important;
+	background-image: linear-gradient( rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("/static/texture13.jpg");
 	color: white;
 	width:100%;
 	text-align: center;
@@ -431,13 +507,14 @@ button:hover, a:hover {
 .centAgina {
 	text-align:center;
 	justify-content:center;
-	padding-top:270px;
+	padding-top:20px;
 	font-weight:700;
 	color:coral !important;
 }
 .ctc {
+
 	box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.3);
-	background-image: linear-gradient( rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("texture1.jpg");
+	background-image: linear-gradient( rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("/static/texture1.jpg");
 	height: 500px !important;
 	width: 500px !important;
 	border-radius: 50% !important;
@@ -446,22 +523,22 @@ button:hover, a:hover {
 }
 
 	.ctc p {
-		position: absolute;
+		
 		top: 50%;
 		vertical-align: middle;
-		padding-left: 150px;
-		padding-right: 150px;
+		
 		color: #fff;
 		justify-content: center !important;
 		text-align: center !important;
 	}
 
 	.ctc h2 {
-		position: absolute;
-		top: 30%;
+		padding-top:200px;
+		
 		color: antiquewhite;
-		padding-left: 150px;
-		text-align: center !important;
+		
+		text-align:center;
+
 		font-weight: bold;
 	
 		justify-content: center !important;
@@ -503,7 +580,7 @@ button:hover, a:hover {
 	text-decoration: underline;
 	font-family: MONOSPACE;
 	font-size: 50px;
-	margin-top: 30px !important;
+	margin-top: 50px !important;
 	color: goldenrod;
 }
 .businessCard h1 {
@@ -517,9 +594,12 @@ button:hover, a:hover {
 	width:100% !important;
 	position:fixed !important;
 	z-index:2;
+	
 }
 
-
+.host{
+	margin-top: -20px !important;
+}
 
 .col {
 	font-size: 25px;
