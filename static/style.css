@@ -14,7 +14,7 @@ body {
 .header 
 {  height: 100%;
 	 background-attachment: fixed;
-	background-image:linear-gradient( rgba(0,0,0,0.3),rgba(0,0,0,0.3)) ,url("/static/header2.jpg");
+	background-image:linear-gradient( rgba(0,0,0,0.3),rgba(0,0,0,0.3)) ,url("static/header2.jpg");
 	background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -125,7 +125,7 @@ box-shadow: none !important;
 	
 	 border: 5px solid aliceblue;
   padding: 15px;
-  /* border-image: url(/static/border.png) 20 round; */
+  /* border-image: url(static/border.png) 20 round; */
 	
 	
 }
@@ -162,7 +162,7 @@ box-shadow: none !important;
 
 .containerDiv {
 	background-attachment: fixed;
-	background-image: linear-gradient( rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url("/static/texture7.jpg");
+	background-image: linear-gradient( rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url("static/texture7.jpg");
 }
 
 @media (min-width: 768px) {
@@ -419,7 +419,7 @@ background-color:darkred !important;
 }
 
 .bg-white {
-	background-image: url("/static/head2.jpg");
+	background-image: url("static/head2.jpg");
 }
 
 
@@ -474,10 +474,10 @@ button:hover, a:hover {
 .businessCard {
 	margin-top: 300px;
 	padding: 100px;
-	background-image: linear-gradient( rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url("/static/texture5.jpg");
+	background-image: linear-gradient( rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url("static/texture5.jpg");
 }
 .aboutUsMain {
-	background-image: linear-gradient( rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("/static/texture1.jpg");
+	background-image: linear-gradient( rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("static/texture1.jpg");
 	color: white;
 	height: 100%;
 	text-align: center;
@@ -488,7 +488,7 @@ button:hover, a:hover {
 .contactUsMain {
 	margin-top: 0px !important;
 	padding-top: 0px !important;
-	background-image: linear-gradient( rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("/static/texture13.jpg");
+	background-image: linear-gradient( rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("static/texture13.jpg");
 	color: white;
 	width:100%;
 	text-align: center;
@@ -514,7 +514,7 @@ button:hover, a:hover {
 .ctc {
 
 	box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.3);
-	background-image: linear-gradient( rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("/static/texture1.jpg");
+	background-image: linear-gradient( rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("static/texture1.jpg");
 	height: 500px !important;
 	width: 500px !important;
 	border-radius: 50% !important;
