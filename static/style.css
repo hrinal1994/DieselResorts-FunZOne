@@ -432,7 +432,7 @@ background-color:darkred !important;
 }
 
 .title {
-	color: white;
+	color:black;
 	font-size: 18px;
 }
 
@@ -441,7 +441,7 @@ button {
 	outline: 0;
 	display: inline-block;
 	padding: 8px;
-	color: white;
+      color: white !important;
 	background-color: #000;
 	text-align: center;
 	cursor: pointer;
